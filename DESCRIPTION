@@ -1,10 +1,10 @@
 Package: SPOT
 Type: Package
-Title: What the Package Does (Title Case)
+Title: App for SPOT (Safe Path Optimization Tool)
 Version: 1.0.0
 Author: Apurv Priyam
 Maintainer: Apurv Priyam <apriyam3@gatech.edu>
-Description: App for SPOT (Safe Path Optimization Tool)
+Description: This app launches SPOT app to give the shortest, safest path or combination of both based on user's preference.
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
