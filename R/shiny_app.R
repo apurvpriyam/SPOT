@@ -14,13 +14,15 @@
 #' runSPOT(py_path = "path/to/pyhton")
 #' @export
 
-runSPOT <- function(py_path = NULL) {
+runSPOT <- function(py_path = NULL, google_api_key = NULL) {
 
   if (is.null(py_path)){
     py_path <- Sys.which("python")
   }
   .GlobalEnv$.path <- py_path
+  .GlobalEnv$.key <- google_api_key
   on.exit(rm(.path, envir=.GlobalEnv))
+  on.exit(rm(.key, envir=.GlobalEnv))
 
   appDir <- system.file("shiny", "safe_path", package = "SPOT")
 

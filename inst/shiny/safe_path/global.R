@@ -16,6 +16,7 @@ if (!require(loc_pkg, character.only = TRUE)){
 library(dashboardthemes2)
 
 py_path <- .path
+key <- .key
 
 source("util/function.R")
 
@@ -48,5 +49,5 @@ state_abb <- sort(c("AL", "AZ", "AR", "CA", "CO", "CT", "DC", "DE", "FL",
 accidents <- data.table::fread("data/US_Accidents_fil.csv")
 
 # google api for location latlon
-ggmap::register_google(key = "AIzaSyBJAUbASbiaE9vyx65RsY2q_YzR8u12MZo")
+ggmap::register_google(key = key)
 
