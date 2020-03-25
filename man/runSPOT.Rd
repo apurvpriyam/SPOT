@@ -4,7 +4,7 @@
 \alias{runSPOT}
 \title{Run the SPOT app}
 \usage{
-runSPOT(py_path = NULL)
+runSPOT(py_path = NULL, google_api_key = NULL)
 }
 \arguments{
 \item{py_path}{path to the python executable. See decription for more information}
