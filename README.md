@@ -19,7 +19,7 @@ install.packages("devtools")
 After successful installation, run following commands
 ```R
 library(devtools)
-install_github("apurvpriyam/SPOT")
+install_github("apxr/SPOT")
 ```
 
 Before running the app, its recommended to see the help by running the command 
